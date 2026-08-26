@@ -12,7 +12,7 @@ Junior Web Developer
 Studio Onboarding & GitHub Workspace Setup
 
 ## Live Site
-GITHUB PAGES URL
+https://swjxrge.github.io/webworks-studio/ 
 
 ## Week 1 Requirements
 - Edit project files in Visual Studio Code.
