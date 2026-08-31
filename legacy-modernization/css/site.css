@@ -2,12 +2,25 @@
    Last updated: 08/17/2000
 */
 
+
+
+/* Base Styles */
+
+
 body {
   margin-top: 18px;
   margin-bottom: 18px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  background-color: #E8E1C9;
+  color: #333333;
+
 }
+
+
+
+/*Typography and Linkss*/
+
 
 p {
   font-family: Arial, Helvetica, sans-serif;
@@ -31,52 +44,63 @@ h2 {
 
 a {
   color: #285B39;
+
 }
 
 a:hover {
   color: #993300;
 }
 
+
+
+/*Header*/
+
+.HeaderContent {
+
+
+}
+
+
+
+
+/*Navigation*/
+
+.navBar{
+
+}
+
 .navcell {
-  background-color: #315C3D;
-  height: 34px;
+
 }
 
-.navcell a {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #FFFFFF;
-  font-size: 11px;
-  font-weight: bold;
-  text-decoration: none;
+
+
+
+/*Main Content*/
+
+.plantlist{
+
 }
 
-.navcell a:hover {
-  color: #FFF3B8;
+.quickLinks{
+
 }
+
 
 .photo {
   border: 1px solid #9E9475;
 }
 
-.footertext {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  color: #666666;
+/*Footer*/
+
+
+
+.footerLinks{
+  
 }
 
-.footertext a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-}
 
-/* old notes
-.green { color: #315C3D; }
-*/
 
-td {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-}
 
 /* duplicate link rules from later update */
 a:link {
