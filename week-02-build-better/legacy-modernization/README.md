@@ -21,3 +21,8 @@ Add to my css labels, create flexboxes, make the nav horizontal, as well as the 
 
 ## Week 3 Work
 I did all of the CSS to my page and managed to keep all of the old colors and kind of layout style from before. I did stretch out everything to normal size because the old one was really small. What helped speed things up really smooth was already having everything labeled in my css. The biggest struggle I had so far was moving the quicklinks section to the side and having the about and services stack on top of each other beside the quick links.
+
+## PSW Decisions
+1- Old website was small-- adjust content-- automatically adjust to modern tech
+2- Website needs to be responsive--allow flexwrap, grid layout-tells the website how to wrap or sort content when shrinking the window view size
+3- Quick Links Section has to be a sort of sidebar--using float left- helped me just shift it to the left nice and neat.
