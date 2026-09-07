@@ -55,8 +55,21 @@ a:hover {
 
 /*Header*/
 
-.HeaderContent {
+header {
+  width: auto;
+  background-color: #ffffff;
+  border-top: 12px solid #315C3D;
+}
 
+
+.HeaderContent {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+max-width: 1100px;
+margin: 0 auto;
+padding: 20px 0;
 
 }
 
@@ -65,52 +78,267 @@ a:hover {
 
 /*Navigation*/
 
-.navBar{
+
+
+.navBar ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #ffffff;
+  gap: 1px;
 
 }
 
 .navcell {
-
+  flex: 1 1 120px;
+  background-color: #315C3D;
+  text-align: center;
 }
 
+.navcell a {
+display: block;
+  padding: 10px 6px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navcell a:hover {
+  color: #FFF3B8;
+  background-color: #285B39;
+}
 
 
 
 /*Main Content*/
 
-.plantlist{
+main {
+  width: auto;
+  max-width: none;
+  margin: 0 ;
+  padding: 20px 5%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  
+}
 
+main > br {
+  display: none;
+}
+main > section:first-child {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 20px;
+  align-items: start;
+}
+
+main > section:first-child h1,
+main > section:first-child p {
+  grid-column: 1;
+}
+
+main > section:first-child .photo {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  max-width: 420px;
+  height: auto;
+  width: 100%;
+  justify-self: start;
+}
+
+#plants{
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 4px solid #315C3D;
+}
+
+.plantlist{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plantlist li{
+  padding: 16px;
+  border: 1px solid #D5CCAE;
+  background-color: #F6F0DA;
+}
+
+.plantlist h3{
+  margin-top: 0;
+  color: #315C3D;
+}
+
+.plantlist p{
+  margin: 8px 0;
 }
 
 .quickLinks{
+  margin: 30px 20px 0 0;
+  padding: 16px;
+  background-color: #EFE7CE;
+  border: 1px solid #D5CCAE;
+  float: left;
+  width: 190px;
+  box-sizing: border-box;
+  min-height: 450px;
+}
+
+.quickLinks h2{
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.quickLinks ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.quickLinks li{
+  margin-bottom: 12px;
+}
+
+.quickLinks li::before{
+  content: "•";
+  color: #315C3D;
+  font-weight: bold; 
+}
+
+#services,
+#about{
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #C8BE9D;
+  margin-left: 210px;
+}
+
+#services h3{
+  margin-bottom: 4px;
+  color: #315C3D;
+}
+
+#services p{
+  margin-top: 0;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  column-gap: 20px;
+}
+
+#about h2{
+  grid-column: 1/3;
+}
+
+#about img{
+  grid-column: 1;
+  grid-row: 2/ span 2;
+  max-width: 100%;
+  height: auto;
+}
+
+#about p{
+  grid-column: 2;
+  margin-top: 0;
+}
+
+#visit{
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 4px solid #315C3D;
+  background-color: #F4EAC8;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  margin-top:30px;
+  padding:20px
+  clear: both;
+}
+
+#visit h2{
+  margin: 0;
+  font-size: 20px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#visit h3{
+  margin: 0;
+  margin-bottom: 6px;
+  color: #315C3D;
+
+  grid-column: 2;
+  grid-row: 1;
 
 }
 
+#visit p:nth-of-type(-n+3) {
+  grid-column: 1;
+}
 
-.photo {
-  border: 1px solid #9E9475;
+#visit p:nth-of-type(n+4) {
+  grid-column: 2;
+}
+
+#visit p{
+  margin: 4px 0;
+}
+
+#visit p:nth-of-type(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#visit p:nth-of-type(5) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#visit p:nth-of-type(6) {
+  grid-column: 2;
+  grid-row: 4;
 }
 
 /*Footer*/
 
+footer{
+  padding: 20px 5%;
+  border-bottom: 12px solid #315C3D;
+  background-color: #ffffff;
+  color: #666666;
+  text-align: center;
+}
 
+.footerLinks ul{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-.footerLinks{
-  
+.footerLinks a{
+  font-size: 11px;
+}
+
+footer p{
+  margin: 12px 0 0;
+  font-size: 11px;
 }
 
 
 
 
-/* duplicate link rules from later update */
-a:link {
-  color: #285B39;
-}
 
-a:visited {
-  color: #6C4E32;
-}
 
-a:active {
-  color: #993300;
-}
