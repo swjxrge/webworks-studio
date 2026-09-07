@@ -17,3 +17,7 @@ CSS labels are done. There will be more added next week but the main ones are th
 
 ## My Goal for next week
 Add to my css labels, create flexboxes, make the nav horizontal, as well as the footer. make the quicklinks box a side bar.
+
+
+## Week 3 Work
+I did all of the CSS to my page and managed to keep all of the old colors and kind of layout style from before. I did stretch out everything to normal size because the old one was really small. What helped speed things up really smooth was already having everything labeled in my css. The biggest struggle I had so far was moving the quicklinks section to the side and having the about and services stack on top of each other beside the quick links.
