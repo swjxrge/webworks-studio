@@ -35,16 +35,16 @@ Use Tailwind utilities to translate the supplied visual direction into a polishe
 Before submitting, replace the placeholders below with approximately three examples.
 
 ### Decision 1
-**Used:**  
-**Why:**  
+**Used:  `max-w-6xl`, `mx-auto`, `px-6`, and consistent padding and gap utilities.
+**Why: These keep the content centered and give the sections and cards consistent spacing. 
 
 ### Decision 2
-**Used:**  
-**Why:**  
+**Used:** `grid-cols-1 md:grid-cols-3` for cards and `md:grid-cols-2` for the hero and story. 
+**Why:**  Content stacks on smaller screens and switches to columns when there is more room.
 
 ### Decision 3
-**Used:**  
-**Why:**  
+**Used:**  `hover:bg-[#6d4a38]`, `hover:underline`, and `focus-visible:outline-2` with outline colors and offsets.
+**Why:**  Hover styles give mouse users feedback, and visible focus outlines help keyboard users identify the selected link.
 
 ## Live Site
 Add your published GitHub Pages URL here.
