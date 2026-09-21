@@ -1,0 +1,83 @@
+/*
+  Cedar & Stone Home Services — Week 5 Starter
+  Build with a System: Bootstrap
+
+  PROFESSIONAL WORKFLOW
+  Identify Requirement → Find Bootstrap Pattern → Implement → Adapt → Test
+
+  Bootstrap should do most of the layout and common interface work.
+  Before adding custom CSS, ask whether Bootstrap already provides an
+  appropriate utility or component pattern.
+
+  Use this file only for limited CLIENT-SPECIFIC styling that Bootstrap
+  does not reasonably provide.
+
+  Brand direction:
+  Deep green: #203c35
+  Cedar:      #a86643
+  Warm cream: #f5f0e7
+  Soft green: #e8efeb
+  Charcoal:   #26312d
+  Muted text: #5d6a64
+
+  Avoid rebuilding Bootstrap's grid, cards, buttons, spacing system,
+  responsive utilities, or other framework behavior here.
+
+  If you find yourself writing large overrides or repeated !important
+  declarations, reconsider your Bootstrap structure/classes first.
+*/
+
+
+body {
+  background-color: #f5f0e7;
+  color: #26312d;
+}
+
+h1, h2, h3, .navbar-brand {
+  color: #203c35;
+}
+
+#services,
+#contact {
+  background-color: #e8efeb;
+}
+
+a {
+  color: #203c35;
+}
+
+a:hover {
+  color: #70432c;
+}
+
+.btn-primary {
+  --bs-btn-bg: #203c35;
+  --bs-btn-border-color: #203c35;
+  --bs-btn-hover-bg: #152922;
+  --bs-btn-hover-border-color: #152922;
+  --bs-btn-active-bg: #152922;
+  --bs-btn-active-border-color: #152922;
+  --bs-btn-focus-shadow-rgb: 32, 60, 53;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #203c35;
+  --bs-btn-border-color: #203c35;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #203c35;
+  --bs-btn-hover-border-color: #203c35;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #203c35;
+  --bs-btn-active-border-color: #203c35;
+  --bs-btn-focus-shadow-rgb: 32, 60, 53;
+}
+
+.card {
+  border-top: 4px solid #a86643;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #203c35;
+  outline-offset: 4px;
+}

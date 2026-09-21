@@ -100,17 +100,17 @@ Complete all three responses below. Keep each response concise and specific to *
 ## 1. Framework Choice
 **Identify one feature Bootstrap made significantly faster to implement. Briefly explain what Bootstrap provided and why that helped this project.**
 
-[Replace this text with your response.]
+// Bootstrap made the navbar responsiveness faster to implement because it provided better behavior for smaller screens, so it saves time building the navigiation.
 
 ## 2. Adaptation
 **Identify one Bootstrap default you intentionally changed for the client. Explain what you changed and how the adaptation better supports Cedar & Stone.**
 
-[Replace this text with your response.]
+// I changed the regular button color to green to match the page and give it its aesthehtic
 
 ## 3. Professional Judgment
 **Identify one part of the project you would not rebuild from scratch because Bootstrap already provides an appropriate solution. Explain why keeping the framework solution is the better professional choice.**
 
-[Replace this text with your response.]
+//the responsive grid because it handles thestacking and arranging without having to customize css constantly.
 
 ## Live Site
 [Add your published GitHub Pages URL here.]
