@@ -48,12 +48,17 @@ https://www.figma.com/design/f5ASZlVQHmOGyCZaIcB9Lv/Hill-Country-Trail-Guide-%E2
 ---
 
 ## 5. Prototype Flow
-Describe the user task your prototype demonstrates.
+the prototype shows maya narrowing down trails based pn her experience and time limit
 
 **Starting point:**  
+maya selected beginner friendly and 3hrs or less but hasnt applied filters
 **User action:**  
-**System/interface response:**  
+User clicks apply filters
+**System/interface response:** 
+the interface cofirms the selections and shows that explains the result and provides a chang filters aciton 
+
 **End state:**  
+user can change filters to return and reconsider her selection
 
 ---
 
@@ -62,18 +67,27 @@ Document approximately three important decisions.
 
 ### Decision 1
 **Problem:**  
+original trail information did not include estimated hiking times, so Maya had to guess whether a hike would fit within three hours.
 **Design response:**  
+I placed estimated completion-time ranges near the top of each trail card. These are example estimates for the prototype and would need verification before development.
 **Why:**  
+Time is one of Maya’s main requirements. Showing it while she compares trails helps her decide without relying only on distance.
 
 ### Decision 2
 **Problem:**  
+Difficulty labels like “Easy” did not explain the terrain or effort involved.
 **Design response:**  
+ included short descriptions of footing, climbing, and terrain cautions alongside each trail’s difficulty rating.
 **Why:**  
+Maya is a beginner, so a rating alone may not tell her enough. Plain-language descriptions help her judge whether a trail fits her comfort level.
 
 ### Decision 3
 **Problem:**  
+original categories looked selectable but did not actually filter the trail list.
 **Design response:**  
+planned clearly labeled filters and connected the “Apply filters” action to a results state. I also included a way to return when no trails match.
 **Why:**  
+Maya needs to know that her action worked and what she can do next. Showing no matches is more useful than suggesting a trail that does not fit her selections.
 
 ---
 
@@ -81,10 +95,10 @@ Document approximately three important decisions.
 Document at least two accessibility decisions you planned before development.
 
 ### Accessibility Decision 1
-[Write here.]
+used visible labels for the experience and hiking-time filters. On mobile, the filters appear above the results in a single column. This keeps the reading order clear and helps users understand what each field controls.
 
 ### Accessibility Decision 2
-[Write here.]
+used text to explain difficulty and filter results instead of relying only on color. I also planned large action buttons and keyboard-operable controls with visible focus for development. This helps people using touch screens or keyboards follow the same task path.
 
 ---
 
