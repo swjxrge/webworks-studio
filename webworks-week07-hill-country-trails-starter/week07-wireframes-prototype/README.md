@@ -34,7 +34,7 @@ Translate your **top three Week 6 priorities** into exactly three interface requ
 ---
 
 ## 3. Figma Prototype Link
-[Paste viewable prototype link here.]
+https://www.figma.com/design/f5ASZlVQHmOGyCZaIcB9Lv/Hill-Country-Trail-Guide-%E2%80%94-Week-7?node-id=0-1&t=KHcFPfoYpYZoOqEk-1 
 
 ---
 
