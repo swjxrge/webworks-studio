@@ -1,79 +1,45 @@
 "use strict";
 
-/*
-  WEBWORKS STUDIO — WEEK 8
-  Hill Country Trail Guide
-
-  Your job is to implement TWO behaviors:
-  1. Accessible difficulty disclosure
-  2. Hike-planning form validation and feedback
-
-  Do not use inline onclick/onchange attributes.
-  Use addEventListener().
-  Test with mouse AND keyboard.
-  Keep aria-expanded synchronized with the disclosure state.
-*/
-
-
-// ======================================================
 // PART 1 — DIFFICULTY DISCLOSURE
-// ======================================================
+const difficultyButton = document.querySelector("#difficulty-toggle");
+const difficultyPanel = document.querySelector("#difficulty-panel");
 
-// TODO 1:
-// Select the disclosure button and the panel it controls.
+// Native buttons support mouse clicks, Enter, and Space.
+difficultyButton.addEventListener("click", function () {
+  const isOpen = !difficultyPanel.hidden;
+  difficultyPanel.hidden = isOpen;
+  difficultyButton.setAttribute("aria-expanded", String(!isOpen));
+});
 
-
-// TODO 2:
-// Listen for activation of the button.
-
-
-// TODO 3:
-// Determine whether the panel is currently open/closed.
-
-
-// TODO 4:
-// Show or hide the panel.
-
-
-// TODO 5:
-// Update aria-expanded to match the visible state.
-
-
-// ======================================================
 // PART 2 — HIKE PLANNING FORM
-// ======================================================
+const hikeForm = document.querySelector("#hike-form");
+const formFeedback = document.querySelector("#form-feedback");
+const trailSelect = document.querySelector("#trail");
+const experienceSelect = document.querySelector("#experience");
+const hoursSelect = document.querySelector("#hours");
 
-// TODO 6:
-// Select the form and the feedback region.
+function clearFeedback() {
+  formFeedback.textContent = "";
+}
 
+// Clear the previous review when selections change or validation fails.
+hikeForm.addEventListener("change", clearFeedback);
+// Invalid events do not bubble, so capture them from the required fields.
+hikeForm.addEventListener("invalid", clearFeedback, true);
 
-// TODO 7:
-// Listen for form submission.
+// The browser checks required fields before firing a normal submit event.
+hikeForm.addEventListener("submit", function (event) {
+  event.preventDefault();
 
+  const trail = trailSelect.value;
+  const experience = experienceSelect.value;
+  const availableTime = hoursSelect.selectedOptions[0].textContent;
 
-// TODO 8:
-// Preserve native HTML validation.
-// If the form is invalid, allow/report useful validation behavior
-// and DO NOT display success feedback.
-
-
-// TODO 9:
-// If the form is valid, prevent a real server submission.
-
-
-// TODO 10:
-// Read the values you need from the form.
-
-
-// TODO 11:
-// Display useful confirmation/feedback in #form-feedback.
-// The message should help the user understand what they selected.
-
-
-// TODO 12:
-// Test:
-// - empty form
-// - partially completed form
-// - valid form
-// - keyboard-only interaction
-// - browser console
+  // Plain text updates the starter's polite live region safely.
+  formFeedback.textContent =
+    `Your hike plan is ready to review! Trail: ${trail}. ` +
+    `Hiking experience: ${experience}. Time available: ${availableTime}. ` +
+    "Check the trail's estimated time, current weather, trail conditions, " +
+    "and official park information before leaving. " +
+    "This classroom demo does not save or send your plan.";
+});
