@@ -25,17 +25,15 @@ I changed the colors, spacing, borders, and focus styles to match the market pag
 
 ## Testing Notes
 
-The Tailwind build passed. The code checks confirmed that all four maker cards have matching filter values and that the three accordion buttons connect to the correct answers. These checks do not replace testing the page in a browser.
+The Tailwind build and code checks passed. The published GitHub Pages page was also checked in a browser.
 
-Browser testing is still pending because the preview tools could not open the page successfully. Before submitting, I need to check:
-
-- **Narrow screen (375px):** Make sure the controls fit, the cards are readable, and the page does not scroll sideways.
-- **Medium screen (768px):** Check the two-column card layout and make sure the FAQ text fits.
-- **Wide screen (1440px):** Check the four-card layout and the spacing around the accordion.
-- **Filter:** Try every category, check that the correct maker shows, and use Show all makers to reset it.
-- **Keyboard:** Use Tab to move through the page, arrow keys to change the dropdown, and Enter or Space to use the buttons. Check that the focus indicator stays visible.
-- **Accordion:** Check that the first answer starts open and that every section opens and closes more than once.
-- **Console and live page:** Check for errors and repeat the interaction tests after publishing.
+- **Narrow screen (375px):** The maker cards used one column with no horizontal overflow.
+- **Medium screen (768px):** The maker cards used two columns with no horizontal overflow.
+- **Wide screen (1440px):** All four cards fit in one row with no horizontal overflow.
+- **Filter:** Every category showed the correct maker and booth number. Show all makers brought all four cards back.
+- **Keyboard:** The dropdown responded to arrow keys. Tab moved to the reset button with a visible focus ring, and Enter reset the filter. All three accordion buttons responded to Enter and Space.
+- **Accordion:** The first section started open. All three sections responded to clicks and repeated keyboard toggles, and the expanded-state attributes changed with them.
+- **Console:** No errors or warnings were reported during these checks. All four maker images loaded.
 
 ## Dependencies
 
@@ -59,4 +57,5 @@ Include the generated CSS, local Preline script, and package lock file in Git. L
 
 ## Submission
 
-The project belongs in the existing webworks-studio repository. After publishing and testing, add the verified live page link here and submit the direct GitHub folder link.
+- [Live page](https://swjxrge.github.io/webworks-studio/webworks-module09-student-starter-v2/)
+- [GitHub project folder](https://github.com/swjxrge/webworks-studio/tree/main/webworks-module09-student-starter-v2)
