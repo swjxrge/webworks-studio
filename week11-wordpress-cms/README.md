@@ -3,202 +3,146 @@
 ## CMS Project Overview
 
 **Client:** Southtown Community Arts  
-**Role:** Junior Web / CMS Specialist  
-**Week:** 11 — Build for Content: WordPress & CMS Fundamentals
+**Role:** Junior Web / CMS Specialist
 
-Briefly summarize what you configured in WordPress.
-
-[Write 2–3 sentences here.]
-
----
+I configured a WordPress site using the supplied Southtown Community Arts content and the Assembler block theme. The site separates regular page content from shared navigation, the footer, and a reusable program callout so staff can make updates without rebuilding the layout.
 
 ## WordPress Site Access
 
-**Site URL or instructor-access information:**  
-[Add the site URL or access information provided by your instructor.]
+**Live site:** https://jxrgieshouse.wordpress.com/  
+**Platform:** WordPress.com Free  
+**Theme:** Assembler
 
----
+The front-end site is public. Editing requires the site owner's WordPress account; login information is not included in this repository.
 
-# Content Architecture
+## Content Architecture
 
-Explain how you organized the supplied client content.
+### Pages
 
-## Pages
+- **Home:** Introduces the organization and highlights its programs. It is stable information that visitors should always be able to find.
+- **Programs:** Explains Community Workshops, Youth Art Studio, and Open Studio Nights. Staff can revise these descriptions as needed.
+- **About:** Explains the organization's purpose and values. This belongs in the site's main information structure.
+- **News:** Uses the native Latest Posts block to give visitors a place to find published announcements.
 
-List the Pages you created and briefly explain why they belong as Pages.
+### Post
 
-- **Home:** [Explain]
-- **Programs:** [Explain]
-- **About:** [Explain]
+**Fall Workshop Registration Opens September 3** is a Post because it is a dated announcement that belongs in an ongoing news feed. The supplied announcement copy was preserved, including its September 3 date.
 
-## Post
-
-**News Post:** [Add the post title]
-
-Explain why this content belongs as a Post rather than a Page.
-
-[Write your response here.]
-
----
-
-# Reusable Pattern
-
-**Pattern Name:**  
-[Add the pattern name.]
-
-**Used For:**  
-[Describe the repeated content structure.]
-
-**Why a Pattern Was Appropriate:**  
-[Explain why this content should be reusable.]
-
----
-
-# Site-Wide Structure
-
-Describe the required Site Editor change you completed.
-
-**Change:**  
-[Describe the change.]
-
-**Where It Was Made:**  
-[Header, footer, navigation, template part, etc.]
-
-**Why It Belongs at the Site Level:**  
-[Explain why this should affect multiple pages rather than one page only.]
-
----
-
-# Client Update Test
-
-Complete `CLIENT-UPDATE.md` after the primary site build, then document the result here.
-
-## Supplied Update
-
-Briefly identify the client change you completed.
-
-[Write here.]
-
-## Where I Made the Update
-
-What WordPress content-editing area did you use?
-
-[Write here.]
-
-## Structure Check
-
-Did you need to modify the header, footer, navigation, template, template part, or reusable pattern? Explain.
-
-[Write here.]
-
-## Maintainability Result
-
-Explain how this update demonstrates that routine content can change without rebuilding the site's global structure.
-
-[Write 2–4 sentences here.]
-
----
-
-# Accessibility & Responsive Checks
-
-Document the quality checks you completed.
-
-## Headings
-
-[Briefly explain how you verified logical heading structure.]
-
-## Images
-
-[Briefly explain how you handled meaningful alternative text.]
-
-## Links & Buttons
-
-[Briefly explain how you checked link/button text.]
-
-## Keyboard
-
-[Briefly explain how you tested keyboard navigation and visible focus.]
-
-## Responsive Layout
-
-[Briefly explain how you checked narrow-screen behavior.]
-
----
-
-# Evidence
-
-Replace the files in the `evidence/` folder with your own screenshots using the exact required filenames.
-
-## Home Page
-
-![Completed Home page](evidence/home-page.png)
-
-## Programs Page
-
-![Completed Programs page](evidence/programs-page.png)
-
-## News Post
-
-![Published News post](evidence/news-post.png)
-
-## Primary Navigation
-
-![Primary site navigation](evidence/navigation.png)
+**Primary navigation:** Home → Programs → News → About.
 
 ## Reusable Pattern
 
-![Reusable pattern in WordPress](evidence/reusable-pattern.png)
+**Pattern name:** Southtown - Program Callout
 
-## Narrow-Screen / Mobile View
+The synced pattern contains the “Ready to Join a Program?” heading, a short paragraph, and a “View Latest News” button. It is inserted on the Programs page. Saving these blocks together gives staff an approved callout they can reuse, and synced instances keep the same wording and structure.
 
-![Responsive WordPress page at a narrow viewport](evidence/mobile-page.png)
+Editors should understand that editing a synced pattern updates its other instances. Regular program descriptions remain outside the pattern so they can change independently.
 
----
+## Site-Wide Structure
 
-# Developer Handoff
+I updated the global Footer template part in the Site Editor with:
 
-Keep each response concise and specific to this project.
+- Southtown Community Arts
+- San Antonio, Texas
+- hello@southtownarts.example
+- Creative learning. Shared locally.
 
-## CMS Choice
+This information appears across the site, so keeping it in one shared footer makes future changes easier. The shared Header contains the required Navigation block. I also set the Single Posts template title to H1 so the announcement has a logical heading structure. These changes used WordPress's editors; no theme source files, PHP, custom CSS, or extra plugins were added.
 
-Why is WordPress an appropriate solution for Southtown Community Arts?
+## Client Update Test
 
-[Write 2–4 sentences here.]
+### Supplied Update
 
-## Editable Content
+After the main build, I changed the Community Workshops sentence from:
 
-What information should Southtown Community Arts staff be able to update routinely?
+> Short-format workshops introduce participants to a specific medium or technique.
 
-[Write 2–4 sentences here.]
+To:
 
-## Reusable Structure
+> Short-format workshops introduce participants to a focused medium or technique through guided, beginner-friendly practice.
 
-What site element did you make reusable or site-wide, and why?
+### Where I Made the Update
 
-[Write 2–4 sentences here.]
+I selected and replaced the sentence inside the Programs page's existing Paragraph block through the page editor's code view. The existing block layout stayed in place.
 
-## Client Protection
+### Structure Check
 
-What design or architecture decision helps the site remain consistent when staff members make routine updates?
+The sentence update did not change the header, footer, navigation, templates, template parts, or synced pattern. I checked the front-end Programs page afterward and confirmed the new wording and the same shared menu, footer, and callout.
 
-[Write 2–4 sentences here.]
+### Maintainability Result
 
----
+The program description is editable page content, so a normal text revision does not require a site-wide change. Keeping that text outside the shared pattern protects the other reusable content. The updated Programs page remained readable at desktop and phone widths.
 
-# Final Handoff Check
+## Accessibility & Responsive Checks
 
-- [ ] Home, Programs, and About are published as Pages.
-- [ ] The supplied announcement is published as a Post.
-- [ ] Primary navigation works in the required order.
-- [ ] One meaningful reusable Pattern is present.
-- [ ] The required site-wide structure adjustment is complete.
-- [ ] I completed the supplied `CLIENT-UPDATE.md` request after the main build.
-- [ ] The client update did not require unnecessary global-structure changes.
-- [ ] Headings are logical.
-- [ ] Informative images have meaningful alternative text.
-- [ ] Link and button labels are understandable.
-- [ ] Keyboard focus is visible.
-- [ ] Narrow-screen behavior was checked.
-- [ ] All six evidence images display correctly in this README.
-- [ ] All four Developer Handoff responses are complete.
-- [ ] I committed and pushed this Week 11 handoff folder.
+- **Headings:** Home, Programs, About, and the News post have H1 titles. Main sections use H2, with H3 for subsections such as the Home program highlights and About values.
+- **Images:** The starter folder did not include content images, and none were added. Future informative images should receive useful alt text; decorative images should use empty alt text.
+- **Links and buttons:** Navigation uses the required labels. Buttons use the supplied “View Programs,” “Explore Programs,” and “View Latest News” labels and lead to the matching destinations.
+- **Keyboard:** Tab moved from Home to Programs in the primary navigation, with a visible outline. The mobile menu opened, focused its links, and allowed keyboard activation.
+- **Responsive layout:** I checked the front-end Programs page at 1366 pixels and 390 pixels wide. Text wrapped within the screen, the navigation switched to a mobile menu, and there was no horizontal page overflow at the phone width.
+- **Readability:** The theme's black text, white background, and clear button styling keep content easy to read without depending on color alone.
+
+## Evidence
+
+### Home Page
+
+![Completed Home page](evidence/home-page.png)
+
+### Programs Page
+
+![Programs page after the client update](evidence/programs-page.png)
+
+### News Post
+
+![Published News announcement](evidence/news-post.png)
+
+### Primary Navigation
+
+![Home, Programs, News, and About navigation](evidence/navigation.png)
+
+### Reusable Pattern
+
+![Saved Southtown pattern in the WordPress code editor](evidence/reusable-pattern.png)
+
+### Narrow-Screen / Mobile View
+
+![Programs page at a 390-pixel viewport](evidence/mobile-page.png)
+
+## Developer Handoff
+
+### CMS Choice
+
+WordPress fits Southtown Community Arts because staff need to update program information and publish announcements regularly. They can manage that content through the dashboard instead of editing website files for every change.
+
+### Editable Content
+
+Staff should be able to revise program descriptions, About information, and announcements. They can also publish new Posts and maintain navigation as the site's content changes.
+
+### Reusable Structure
+
+The program callout is a synced pattern, while the header and footer are shared template parts. These structures keep repeated content consistent and reduce the amount of work needed to maintain the site.
+
+### Client Protection
+
+Program wording stays in page content, separate from the global layout and synced callout. For routine changes, staff should open the relevant Page or Post and leave the Site Editor alone. They should also check heading levels, link destinations, and mobile layout after editing.
+
+## CMS vs. Coded Site Reflection
+
+A CMS works well for organizations that regularly update programs, announcements, or other information and have staff who do not write code. WordPress makes those changes easier because editors can manage pages and posts through a dashboard. Patterns and shared template parts also help the site stay consistent. Compared with a hand-coded static site, though, a CMS adds more settings, maintenance, and opportunities for editing mistakes. A small site that rarely changes might be easier to manage as static files. For Southtown, the regular content updates make a CMS a practical choice.
+
+## Final Handoff Check
+
+- [x] Home, Programs, and About are published as Pages.
+- [x] The supplied announcement is published as a Post.
+- [x] Primary navigation works in the required order.
+- [x] The reusable pattern is saved and used on Programs.
+- [x] The required global footer adjustment is complete.
+- [x] The client update was completed after the main build.
+- [x] The sentence update left shared structures intact.
+- [x] Headings and link labels were checked.
+- [x] Keyboard focus and mobile navigation were checked.
+- [x] Desktop and narrow Programs layouts were checked.
+- [x] Six evidence screenshots are saved in this folder.
+- [x] Developer handoff responses and the CMS reflection are complete.
+- [ ] GitHub push and online screenshot display verified.
+- [ ] Direct Week 11 folder link submitted in Canvas.
