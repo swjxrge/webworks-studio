@@ -1,63 +1,12 @@
 # Hill Country Coffee
 
-## WebWorks Studio Client Project
+Hill Country Coffee is a Central Texas coffee company with neighborhood cafés. This project will give customers a mobile-friendly place to check hours and locations, look through the food and drink menu, and learn a little about the company.
 
-This folder is the **single continuing client project** for the final WebWorks Studio sprints.
+## Week 13 - Discovery & Planning
 
-Do not create a new copy of the project each week. Continue developing this folder as the project moves from planning into production, quality assurance, and final delivery.
+This week I used the client brief and the three personas to figure out what people need from the site. The main priorities are making hours and locations easy to find, keeping the menu easy to read on a phone, and giving visitors a short introduction to the business. The plan covers what the site needs, how the pages fit together, and what I’ll build and test in the next sprints.
 
-## Client
+[View the Hill Country Coffee client project plan](docs/client-project-plan.md)
 
-**Hill Country Coffee**  
-A regional Texas coffee company focused on quality coffee, welcoming neighborhood experiences, and connections to the Texas Hill Country.
+The supplied brief, personas, approved copy, and asset notes are in [assets](assets/). This same project folder continues through production in Week 14, testing in Week 15, and final delivery in Week 16.
 
-## Week 13 Status
-
-**Sprint:** Discovery & Planning  
-**Role:** Junior Web Designer / Developer
-
-### Current Deliverable
-
-Complete:
-
-`docs/client-project-plan.md`
-
-This week you are deciding **what the site needs to accomplish, why it needs to accomplish it, how its content should be organized, and how the remaining work should be planned**.
-
-**Do not design or build the interface yet.** Formal interface design is not a Week 13 deliverable. Production begins in Week 14, when you will apply the UX, responsive-design, and interface skills developed earlier in WebWorks Studio.
-
-## Project Structure
-
-```text
-hill-country-coffee/
-├── README.md
-├── docs/
-│   └── client-project-plan.md
-├── assets/
-│   ├── client-brief.md
-│   ├── personas.md
-│   ├── approved-content.md
-│   └── asset-notes.md
-└── [production files added in later sprints]
-```
-
-## Week 13 Planning Flow
-
-Use the supplied evidence to move through this professional planning sequence:
-
-1. **Discovery** — understand the client, goals, users, needs, supplied content, and constraints.
-2. **Requirements & Scope** — define what the site must do and separate required work from optional or out-of-scope ideas.
-3. **Content Inventory & Organization** — identify the content available, what is missing, and how information should be grouped.
-4. **Sitemap / Information Architecture** — turn those content groups into a clear page hierarchy and navigation structure.
-5. **Technology Decision** — select an appropriate approach based on project requirements.
-6. **Production Plan** — identify milestones, risks, dependencies, backlog priorities, and completion criteria.
-
-## Important
-
-Read the complete client package in `assets/` before completing the Client Project Plan.
-
-Do not invent client facts, prices, locations, services, policies, or content that are not included in the supplied materials.
-
-Missing information should be documented as a **question, assumption, risk, or dependency**.
-
-Your sitemap is a **planning artifact, not a wireframe**. Show pages and hierarchy; do not design page layouts.
